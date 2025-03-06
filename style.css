@@ -1,0 +1,64 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+
+header {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #666;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0px;
+    color: #222;
+}
+
+header nav ul li a {
+    color: #333;
+}
+
+/* Main */
+
+main {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #666;
+}
+
+main article h2 {
+    font-weight: bold;
+    margin: 0px;
+    color: #222;
+}
+
+main article p {
+    line-height: 1.5;
+    margin: 0px;
+    color: #222;
+}
+
+main ul li a {
+    color: #333;
+}
+
+/* Footer */
+
+footer {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #666;
+}
