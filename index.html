@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fancy Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Fancy Website</h1>
+        <nav id="main-menu">
+            <ul id="horizontal-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside id="vertical-menu-container">
+        <nav id="vertical-menu-container">
+            <ul id="vertical-menu-list">
+                <li><a href="#">Vertical 1</a></li>
+                <li><a href="#">Vertical 2</a></li>
+                <li><a href="#">Vertical 3</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <article>
+            <h2>About Us</h2>
+            <p>We are a team of passionate individuals dedicated to crafting exceptional digital experiences.</p>
+        </article>
+    </main>
+
+    <footer>
+        <section id="subscribe">
+            <h3>Subscribe to Our Updates</h3>
+            <form id="subscribe-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </footer>
+    <script src="menu.js"></script>
+    <script src="subscribe.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="test.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#subscribe-form").submit(function(e){
+            e.preventDefault();
+            alert("Thank you for subscribing!");
+        });
+    });
+    </script>
+</body>
+</html>
