@@ -1,12 +1,15 @@
 // menu.js
 document.addEventListener('DOMContentLoaded', function() {
     const mainMenu = document.getElementById('main-menu');
+    const menuItems = mainMenu.querySelectorAll('li a');
 
-    // Add click event listeners to menu items
-    mainMenu.querySelectorAll('li').forEach(item => {
-        item.addEventListener('click', () => {
-            console.log('Menu item clicked:', item);
-            // Perform any desired actions on click here
+    menuItems.forEach(item => {
+        item.addEventListener('click', (event) => {
+            event.preventDefault();
+            const href = item.getAttribute('href');
+            if (href) {
+              window.location.href = href;
+            }
         });
     });
 });
